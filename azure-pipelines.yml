@@ -18,8 +18,9 @@ steps:
 - script: |
    git checkout master
    git checkout -b masterEjemplo
-   git pull githubEjemplo master
-   ls
-   git status
    
-  displayName: 'push to githubEjemplo'
+  displayName: 'push to githubEjemplo '
+
+- script: |
+   git pull githubEjemplo master
+   displayName: 'pull'
