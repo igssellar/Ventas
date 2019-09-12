@@ -12,6 +12,12 @@ pool:
 
 steps:
 
+- script: 'git config --global user.name "teams.trifenix"'
+  displayName: 'git config --global user.name '
+
+- script: 'git config --global user.email "teams.trifenix@trifenix.io"'
+  displayName: 'git config --global user.name '
+
 - script: 'git remote add githubEjemplo "https://trifenix:7075e1dbe014ad2833c63d62fbefe9d68efd9a3a@github.com/trifenix/ejemplo1.git"'
   displayName: 'git remote add '
 
