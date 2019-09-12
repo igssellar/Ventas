@@ -1,40 +1,16 @@
-# Node.js with React
-# Build a Node.js project that uses React.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
-
-trigger:
-- master
-
 pool:
   vmImage: 'ubuntu-latest'
 
+trigger:
+  branches:
+    include:
+      - master
 
 steps:
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: $(Build.ArtifactStagingDirectory)
+      ArtifactName: 'drop'
+      publishLocation: 'container'
+  #fin publicando artifacts
 
-- script: 'git config --global user.name "Murray-Trifenix"'
-  displayName: 'git config --global user.name '
-
-- script: 'git config --global user.email "sebastian.murray@trifenix.com"'
-  displayName: 'git config --global uuser.email '
-
-- script: 'git remote add githubEjemplo "https://trifenix:7075e1dbe014ad2833c63d62fbefe9d68efd9a3a@github.com/trifenix/ejemplo1.git"'
-  displayName: 'git remote add '
-
-- script: 'git remote -v'
-  displayName: 'git remote -v '
-
-- script: 'git branch ejemplo'
-  displayName: 'git branch ejemplo '
-
-- script: 'git checkout ejemplo'
-  displayName: 'git checkout ejemplo '
-
-- script: 'git pull githubEjemplo master'
-  displayName: 'git pull githubEjemplo master '
-
-- script: 'git branch'
-  displayName: 'git branch '
-
-- script: 'git push githubEjemplo/master'
-  displayName: 'git push -u githubEjemplo ejemplo '
