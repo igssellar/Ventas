@@ -24,6 +24,9 @@ steps:
 - script: 'git checkout master'
   displayName: 'git checkout master '
 
+- script: 'git branch --set-upstream-to master githubEjemplo/master'
+  displayName: 'git master set upstream ' 
+
 # - script: 'git branch'
 #   displayName: 'git branch '
 
@@ -33,5 +36,5 @@ steps:
 # - script: 'git pull githubEjemplo master'
 #   displayName: 'git pull githubEjemplo master '
 
-- script: 'git push githubEjemplo master'
+- script: 'git push "https://trifenix:7075e1dbe014ad2833c63d62fbefe9d68efd9a3a@github.com/trifenix/ejemplo1.git" master'
   displayName: 'git push -u githubEjemplo master '  
