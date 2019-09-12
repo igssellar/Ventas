@@ -24,6 +24,5 @@ steps:
 
 - script: |
    git pull githubEjemplo master
-   displayName: 'pull'
-
+   
    displayName: 'pull '
