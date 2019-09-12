@@ -22,7 +22,7 @@ steps:
   displayName: 'git remote add '
 
 - script: 'git checkout ejemplo'
-  displayName: 'git checkout ejemplo '
+  displayName: 'git checkout -b ejemplo '
 
 - script: 'git pull githubEjemplo ejemplo'
   displayName: 'git pull githubEjemplo ejemplo '
