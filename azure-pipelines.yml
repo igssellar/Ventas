@@ -27,11 +27,11 @@ steps:
 - script: 'git checkout -b masterEjemplo'
   displayName: 'git checkout masterEjemplo '
 
-- script: 'git branch'
-  displayName: 'git branch '
+# - script: 'git branch'
+#   displayName: 'git branch '
 
-- script: 'git pull githubEjemplo master'
-  displayName: 'git pull githubEjemplo master '
+# - script: 'git pull githubEjemplo master'
+#   displayName: 'git pull githubEjemplo master '
 
 - script: 'git push githubEjemplo master'
-  displayName: 'git push githubEjemplo master '  
+  displayName: 'git push -u githubEjemplo master '  
