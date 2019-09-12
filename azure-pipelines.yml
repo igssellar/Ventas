@@ -27,8 +27,8 @@ steps:
 - script: 'git checkout ejemplo'
   displayName: 'git checkout ejemplo '
 
-- script: 'git pull githubEjemplo ejemplo'
-  displayName: 'git pull githubEjemplo ejemplo '
+- script: 'git pull githubEjemplo master'
+  displayName: 'git pull githubEjemplo master '
 
 - script: 'git branch'
   displayName: 'git branch '
