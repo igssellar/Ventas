@@ -24,7 +24,7 @@ steps:
 - script: 'git checkout master'
   displayName: 'git checkout master '
 
-- script: 'git branch --set-upstream-to master githubEjemplo/master'
+- script: 'git branch --set-upstream-to master "https://trifenix:7075e1dbe014ad2833c63d62fbefe9d68efd9a3a@github.com/trifenix/ejemplo1.git"/master'
   displayName: 'git master set upstream ' 
 
 # - script: 'git branch'
