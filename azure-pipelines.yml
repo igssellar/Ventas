@@ -18,9 +18,12 @@ steps:
 - script: |
    git checkout master
    git checkout -b masterEjemplo
+   git branch
    
   displayName: 'push to githubEjemplo '
 
 - script: |
    git pull githubEjemplo master
    displayName: 'pull'
+
+   displayName: 'pull '
