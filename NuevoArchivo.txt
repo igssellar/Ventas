@@ -1,0 +1,9 @@
+git branch: muestra rama
+git branch NuevaRama: crea una rama
+git checkout NuevaRama: cambia rama a la nueva
+git status: muestra los archivos nuevos que no se han subido
+git add .: se agregan todos los archivos en rojo
+git commit -m "comentario": inserta
+git remote add origin https://tercerimpacto-uv@dev.azure.com/tercerimpacto-uv/desarrollo/_git/Para_Git_Emilio
+git push emilio NuevaRama2: se suben los archivos al repositorio en este caso emilio a la nueva rama NuevaRama2
+git branch -D NUevaRama2: se borra la nueva rama NuevaRama
