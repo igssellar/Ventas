@@ -6,17 +6,18 @@ import { MyLogin } from './MyLogin';
 import { MyMenu } from './MyMenu';
 import { MyCarousel } from './MyCarousel';
 import { MyCarousell } from './MyCarousell';
+import { MyCarouselll } from "./MyCarouselll";
 
 const App: React.FC = () => {
   return (
     <Fragment>
-    <MyMenu />
-    <Container>
-      <MyLogin />
-    </Container>
-    <Container><MyCarousell/></Container>
-    
-  </Fragment>
+      <MyMenu />
+      {/* <Container>
+        <MyLogin />
+      </Container> */}
+      <Container><MyCarouselll /></Container>
+
+    </Fragment>
   );
 }
 

@@ -10,7 +10,7 @@ export interface IMyMenuProps {
 export function MyMenu(props: IMyMenuProps) {
   return (
     // <Router>
-      <Menu size='large' fluid>
+      <Menu size='small' fluid>
       <Container>
         <Menu.Item as="a" header>
           <Image fluid
