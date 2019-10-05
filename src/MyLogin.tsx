@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, Form, Header, Container, Segment, Grid, Message } from "semantic-ui-react";
+import { Button, Form, Header, Segment, Grid, Message } from "semantic-ui-react";
 
 export interface IMyLoginProps {
 
@@ -10,7 +10,7 @@ export function MyLogin(props: IMyLoginProps) {
         <Grid centered columns={2}>
             <Grid.Column>
                 <Header as="h2" textAlign="center">
-                    Login
+                    Ingresar
                 </Header>
                 <Segment>
                     <Form size="large">
@@ -18,23 +18,23 @@ export function MyLogin(props: IMyLoginProps) {
                             fluid
                             icon="user"
                             iconPosition="left"
-                            placeholder="Email address"
+                            placeholder="Dirección de correo"
                         />
                         <Form.Input
                             fluid
                             icon="lock"
                             iconPosition="left"
-                            placeholder="Password"
+                            placeholder="Contraseña"
                             type="password"
                         />
 
                         <Button color="blue" fluid size="large">
-                            Login
+                            Ingresar
                         </Button>
                     </Form>
                 </Segment>
                 <Message>
-                    Not registered yet? <a href="#">Sign Up</a>
+                    ¿Aún no se ha registrado? <a href="#">Regístrese</a>
                 </Message>
             </Grid.Column>
         </Grid>

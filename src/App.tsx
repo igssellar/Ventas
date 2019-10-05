@@ -1,10 +1,11 @@
 import React, { Fragment } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import 'semantic-ui-css/semantic.min.css'
-import { Button, Container } from 'semantic-ui-react';
+import { Container } from 'semantic-ui-react';
 import { MyLogin } from './MyLogin';
 import { MyMenu } from './MyMenu';
+import { MyCarousel } from './MyCarousel';
+import { MyCarousell } from './MyCarousell';
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,8 @@ const App: React.FC = () => {
     <Container>
       <MyLogin />
     </Container>
+    <Container><MyCarousell/></Container>
+    
   </Fragment>
   );
 }
