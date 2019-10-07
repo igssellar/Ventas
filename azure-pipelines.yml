@@ -7,10 +7,12 @@ trigger:
       - master
 
 steps:
-  - task: PublishBuildArtifacts@1
-    inputs:
-      PathtoPublish: $(Build.ArtifactStagingDirectory)
-      ArtifactName: 'drop'
-      publishLocation: 'container'
+- script: |
+    git config user.email "gissella.reyesj@alumnos.uv.cl"  
+    git config user.name "Gissella Reyes"
+    git checkout master
+    git add --all
+    git push https://$(gitToken)@github.com/igssellar/Ventas.git --force
+  displayName: 'Github'
   #fin publicando artifacts
 
