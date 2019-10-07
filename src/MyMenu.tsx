@@ -1,20 +1,23 @@
 import React from 'react'
 import logo from './trifenix.png';
 import { Image, Menu, Container } from 'semantic-ui-react'
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// import { register } from './serviceWorker';
-// import { MyRegister } from './MyRegister';
+//import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+//import { register } from './serviceWorker';
+//import { MyRegister } from './MyRegister'; 
+
+
+
 
 export interface IMyMenuProps {
 }
 export function MyMenu(props: IMyMenuProps) {
   return (
-    // <Router>
-      <Menu size='small' fluid>
+   //<Router>
+      <Menu>
       <Container>
         <Menu.Item as="a" header>
           <Image fluid
-            size="mini"
+            size="tiny"
             src={logo}
           />
         </Menu.Item>
@@ -25,13 +28,13 @@ export function MyMenu(props: IMyMenuProps) {
           </Menu.Item>
 
           <Menu.Item as="a" name="register">
-            Registro
+            Registrarse
           </Menu.Item>
-          {/* <Route path="/register" component={MyRegister} /> */}
+            {/* <Route path="/register" component={MyRegister} /> */}
         </Menu.Menu>
       </Container>
     </Menu>
-    // </Router>
+ //</Router>
     
-  )
+  );
 }
