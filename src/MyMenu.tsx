@@ -10,22 +10,22 @@ export interface IMyMenuProps {
 export function MyMenu(props: IMyMenuProps) {
   return (
     // <Router>
-      <Menu>
+      <Menu size='small' fluid>
       <Container>
         <Menu.Item as="a" header>
           <Image fluid
-            size="tiny"
+            size="mini"
             src={logo}
           />
         </Menu.Item>
 
         <Menu.Menu position="right">
           <Menu.Item as="a" name="login">
-            Login
+            Ingresar
           </Menu.Item>
 
           <Menu.Item as="a" name="register">
-            Register
+            Registro
           </Menu.Item>
           {/* <Route path="/register" component={MyRegister} /> */}
         </Menu.Menu>
