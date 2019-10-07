@@ -1,5 +1,10 @@
 import * as React from 'react';
-import { Button, Form, Header, Segment, Grid, Message } from "semantic-ui-react";
+import logo from './dog.png';
+import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
+//import { register } from './serviceWorker'
+//import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+
 
 export interface IMyLoginProps {
 
@@ -7,37 +12,37 @@ export interface IMyLoginProps {
 
 export function MyLogin(props: IMyLoginProps) {
     return (
-        <Grid centered columns={2}>
-            <Grid.Column>
-                <Header as="h2" textAlign="center">
-                    Ingresar
+            <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
+                <Grid.Column style={{ maxWidth: 450 }}>
+                <Header as='h2' color='teal' textAlign='center'>
+                    <Image fluid
+                    size="large"
+                    src={logo}
+                /> Ingresa 
                 </Header>
-                <Segment>
-                    <Form size="large">
-                        <Form.Input
-                            fluid
-                            icon="user"
-                            iconPosition="left"
-                            placeholder="Dirección de correo"
-                        />
-                        <Form.Input
-                            fluid
-                            icon="lock"
-                            iconPosition="left"
-                            placeholder="Contraseña"
-                            type="password"
-                        />
+                <Form size='large'>
+                    <Segment stacked>
+                    <Form.Input fluid icon='user' iconPosition='left' placeholder='E-mail' />
+                    <Form.Input
+                        fluid
+                        icon='lock'
+                        iconPosition='left'
+                        placeholder='Contraseña'
+                        type='password'
+                    />
 
-                        <Button color="blue" fluid size="large">
-                            Ingresar
-                        </Button>
-                    </Form>
-                </Segment>
+                    <Button color='teal' fluid size='large'>
+                        Ingresar  <a href='./MyRegister'> ing</a>
+                    </Button>
+                        <a href='#'> Olvidaste tu contraseña?</a>
+                    </Segment>
+                </Form>
                 <Message>
-                    ¿Aún no se ha registrado? <a href="#">Regístrese</a>
+                    ¿Aún no te registras? <a href=''> Pincha aquí</a>
                 </Message>
-            </Grid.Column>
-        </Grid>
-
+                </Grid.Column>
+            </Grid>
+       
     );
+    
 }
