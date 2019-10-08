@@ -10,6 +10,7 @@ import { MyCarouselll } from "./MyCarouselll";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { MyRegister } from './MyRegister';
 import { MyHome } from './Home';
+import { MyForgot } from './MyForgot';
 
 const App: React.FC = () => {
   return (
@@ -18,7 +19,9 @@ const App: React.FC = () => {
       <Switch>
       <Route path="/register" component={MyRegister} />
       <Route path="/login" component={MyLogin} />
+      <Route path="/forgot" component={MyForgot} />
       <Route path="/" component={MyHome} />
+
       </Switch>
       </Router>
 

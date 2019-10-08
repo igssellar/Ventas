@@ -1,13 +1,13 @@
 import * as React from 'react';
 import logo from './dog.png';
 import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
-//import { register } from './serviceWorker'
+
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 
 
 export interface IMyLoginProps {
-
+    pressButton : ()=>void;
 }
 
 export function MyLogin(props: IMyLoginProps) {
@@ -33,8 +33,11 @@ export function MyLogin(props: IMyLoginProps) {
 
                     <Button color='teal' fluid size='large'>
                         Ingresar  <a href='./MyRegister'></a>
+
                     </Button>
-                        <a href='#'> Olvidaste tu contraseña?</a>
+                    <Link to="/forgot">
+                        ¿Has olvidado tu contraseña?
+                    </Link>   
                     </Segment>
                 </Form>
                 <Message>
