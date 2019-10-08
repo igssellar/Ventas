@@ -4,6 +4,7 @@ import { Image, Menu, Container } from 'semantic-ui-react';
 import { MyMenu } from './MyMenu';
 import { MySale } from './MySale';
 import Cardd from "./MyCard";
+import Vista from "./Vistas";
 export interface IMyHomeProps {
 
 }
@@ -15,7 +16,7 @@ export function MyHome(props: IMyHomeProps) {
             <MyMenu></MyMenu>
             <MyCarouselll />
             <Container><Cardd /></Container>
-
+            <Container><Vista /></Container>
         </Container>
     );
 
