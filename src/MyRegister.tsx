@@ -1,5 +1,7 @@
 import * as React from 'react';
-import { Button, Form, Grid, Header, Image, Message, Segment, Container } from 'semantic-ui-react'
+import { Button, Form, Grid, Header, Image, Message, Segment, Container } from 'semantic-ui-react';
+import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import logo from './dog.png';
 export interface IMyRegisterProps {
 
 }
@@ -9,7 +11,11 @@ export function MyRegister(props: IMyRegisterProps) {
         <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
         <Grid.Column style={{ maxWidth: 500 }}>
         <Header as='h2' color='teal' textAlign='center'>
-             Registrate
+            <Image fluid
+                size="large"
+                src={logo}
+            />
+        Registrate
         </Header>
         <Form size='large'>
             <Segment stacked>
@@ -51,7 +57,10 @@ export function MyRegister(props: IMyRegisterProps) {
             </Segment>
         </Form>
         <Message>
-            ¿Ya tienes cuenta? <a href=''> Pincha aquí</a>
+            ¿Ya tienes cuenta?  
+                <Link to="/login">
+                    Pincha aquí
+                </Link>
         </Message>
         </Grid.Column>
     </Grid>

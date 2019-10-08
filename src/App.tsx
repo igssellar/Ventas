@@ -7,15 +7,22 @@ import { MyMenu } from './MyMenu';
 import { MyCarousel } from './MyCarousel';
 import { MyCarousell } from './MyCarousell';
 import { MyCarouselll } from "./MyCarouselll";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { MyRegister } from './MyRegister';
+import { MyHome } from './Home';
 
 const App: React.FC = () => {
   return (
     <Fragment>
-      <MyMenu />
-      {/* <Container>
-        <MyLogin />
-      </Container> */}
-      <Container><MyCarouselll /></Container>
+      <Router>
+      <Switch>
+      <Route path="/register" component={MyRegister} />
+      <Route path="/login" component={MyLogin} />
+      <Route path="/" component={MyHome} />
+      </Switch>
+      </Router>
+
+
 
     </Fragment>
   );
