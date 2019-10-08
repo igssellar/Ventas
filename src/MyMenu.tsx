@@ -3,7 +3,7 @@ import logo from './trifenix.png';
 import { Image, Menu, Container} from 'semantic-ui-react'
 import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 //import { register } from './serviceWorker';
-//import { MyRegister } from './MyRegister'; 
+//import { MyRegister } from './MyRegister';
 
 
 
@@ -13,11 +13,11 @@ export interface IMyMenuProps {
 export function MyMenu(props: IMyMenuProps) {
   return (
    //<Router>
-      <Menu>
+      <Menu size="small">
       <Container>
         <Menu.Item as="a" header>
           <Image fluid
-            size="tiny"
+            size="mini"
             src={logo}
           />
         </Menu.Item>
@@ -38,6 +38,6 @@ export function MyMenu(props: IMyMenuProps) {
       </Container>
     </Menu>
  //</Router>
-    
+
   );
 }

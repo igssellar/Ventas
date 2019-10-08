@@ -12,6 +12,8 @@ import { MyRegister } from './MyRegister';
 import { MyHome } from './Home';
 import { MyForgot } from './MyForgot';
 import Cardd from "./MyCard";
+import Vista from "./Vistas";
+import Coment from "./Comentarios";
 const App: React.FC = () => {
   return (
     <Fragment>
@@ -22,6 +24,8 @@ const App: React.FC = () => {
       <Route path="/forgot" component={MyForgot} />
       <Route path="/" component={MyHome} />
       <Route path="/" component={Cardd} />
+      <Route path="/" component={Vista} />
+      <Route path="/" component={Coment} />
       </Switch>
       </Router>
 
