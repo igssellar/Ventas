@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from './trifenix.png';
-import { Image, Menu, Container } from 'semantic-ui-react'
-//import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Image, Menu, Container} from 'semantic-ui-react'
+import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 //import { register } from './serviceWorker';
 //import { MyRegister } from './MyRegister'; 
 
@@ -24,13 +24,16 @@ export function MyMenu(props: IMyMenuProps) {
 
         <Menu.Menu position="right">
           <Menu.Item as="a" name="login">
-            Ingresar
+            <Link to="/login">
+              Ingresar
+            </Link>
           </Menu.Item>
 
           <Menu.Item as="a" name="register">
-            Registrarse
+            <Link to="/register">
+                  Registrarse
+              </Link>
           </Menu.Item>
-            {/* <Route path="/register" component={MyRegister} /> */}
         </Menu.Menu>
       </Container>
     </Menu>

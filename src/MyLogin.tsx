@@ -1,13 +1,13 @@
 import * as React from 'react';
 import logo from './dog.png';
 import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
-//import { register } from './serviceWorker'
-//import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 
 
 export interface IMyLoginProps {
-
+    pressButton : ()=>void;
 }
 
 export function MyLogin(props: IMyLoginProps) {
@@ -15,7 +15,7 @@ export function MyLogin(props: IMyLoginProps) {
             <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
                 <Grid.Column style={{ maxWidth: 450 }}>
                 <Header as='h2' color='teal' textAlign='center'>
-                    <Image fluid
+                <Image fluid
                     size="large"
                     src={logo}
                 /> Ingresa 
@@ -32,13 +32,19 @@ export function MyLogin(props: IMyLoginProps) {
                     />
 
                     <Button color='teal' fluid size='large'>
-                        Ingresar  <a href='./MyRegister'> ing</a>
+                        Ingresar  <a href='./MyRegister'></a>
+
                     </Button>
-                        <a href='#'> Olvidaste tu contraseña?</a>
+                    <Link to="/forgot">
+                        ¿Has olvidado tu contraseña?
+                    </Link>   
                     </Segment>
                 </Form>
                 <Message>
-                    ¿Aún no te registras? <a href=''> Pincha aquí</a>
+                    ¿Aún no te registras? 
+                    <Link to="/register">
+                        Pincha aquí
+                    </Link>         
                 </Message>
                 </Grid.Column>
             </Grid>
