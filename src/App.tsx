@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { MyRegister } from './MyRegister';
 import { MyHome } from './Home';
 import { MyForgot } from './MyForgot';
-
+import Cardd from "./MyCard";
 const App: React.FC = () => {
   return (
     <Fragment>
@@ -21,7 +21,7 @@ const App: React.FC = () => {
       <Route path="/login" component={MyLogin} />
       <Route path="/forgot" component={MyForgot} />
       <Route path="/" component={MyHome} />
-
+      <Route path="/" component={Cardd} />
       </Switch>
       </Router>
 
